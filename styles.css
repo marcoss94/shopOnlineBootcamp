@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+main {
+  margin: 0 auto;
+  width: 80%;
+}
+
+header {
+  padding: 5px;
+  border-bottom: 1px solid lightgray;
+}
+
+.btn {
+  color: white;
+  border: none;
+  padding: 3px 5px;
+  border-radius: 2px;
+  transition: 0.1s;
+  cursor: pointer;
+  min-width: 20px;
+}
+
+.btn-dark {
+  background-color: rgb(49, 49, 49);
+}
+
+.btn-info {
+  background-color: rgb(14, 122, 223);
+}
+
+.btn-danger {
+  background-color: rgb(231, 71, 71);
+}
+
+.btn-info:active {
+  background-color: rgb(50, 138, 221);
+}
+
+.btn-danger:active {
+  background-color: rgb(233, 103, 103);
+}
+
+.btn-dark:active {
+  background-color: rgb(94, 94, 94);
+}
+
+#cards {
+  margin-top: 24px;
+  display: grid;
+  width: 100%;
+  gap: 10px;
+  grid-template-columns: repeat(6, 1fr);
+  margin-bottom: 24px;
+}
+
+#cards article {
+  border: 1px solid gray;
+  border-radius: 2px;
+}
+
+#cards img {
+  width: 100%;
+}
+
+#cards article .body {
+  padding: 10px;
+}
+
+th,
+td {
+  text-align: center;
+}
+table {
+  text-align: left;
+  position: relative;
+  border-collapse: collapse;
+  width: 100%;
+}
+td,
+th {
+  border: 1px solid #999;
+}
+th {
+  border-radius: 0;
+  position: sticky;
+  top: 0;
+  padding: 10px;
+}
